@@ -1,0 +1,141 @@
+{% extends 'site_template.html' %}
+
+{% block body %}
+
+<div class="text-center">
+
+  {% if data %}
+
+
+
+
+  <table border="3">
+  <tbody>
+    <tr>
+      <td>Moneda</td>
+      <td>Símbolo</td>
+      <td>Precio (USD)</td>
+      <td>Cap. mercado</td>
+      <td>Vol. (24h)</td>
+      <td>Vol. total</td>
+      <td>Var. (24h)</td>
+      <td>Var. (7d)</td>
+
+    <tr>
+      <td>{{data[0][0]}}</td>
+      <td>{{data[0][1]}}</td>
+      <td>{{data[0][2]}}</td>
+      <td>{{data[0][3]}}</td>
+      <td>{{data[0][4]}}</td>
+      <td>{{data[0][5]}}</td>
+      <td>{{data[0][6]}}</td>
+      <td>{{data[0][7]}}</td>
+    </tr>
+    <tr>
+      <td>{{data[1][0]}}</td>
+      <td>{{data[1][1]}}</td>
+      <td>{{data[1][2]}}</td>
+      <td>{{data[1][3]}}</td>
+      <td>{{data[1][4]}}</td>
+      <td>{{data[1][5]}}</td>
+      <td>{{data[1][6]}}</td>
+      <td>{{data[1][7]}}</td>
+    </tr>
+    <tr>
+      <td>{{data[2][0]}}</td>
+      <td>{{data[2][1]}}</td>
+      <td>{{data[2][2]}}</td>
+      <td>{{data[2][3]}}</td>
+      <td>{{data[2][4]}}</td>
+      <td>{{data[2][5]}}</td>
+      <td>{{data[2][6]}}</td>
+      <td>{{data[2][7]}}</td>
+    </tr>
+    <tr>
+      <td>{{data[3][0]}}</td>
+      <td>{{data[3][1]}}</td>
+      <td>{{data[3][2]}}</td>
+      <td>{{data[3][3]}}</td>
+      <td>{{data[3][4]}}</td>
+      <td>{{data[3][5]}}</td>
+      <td>{{data[3][6]}}</td>
+      <td>{{data[3][7]}}</td>
+    </tr>
+    <tr>
+      <td>{{data[4][0]}}</td>
+      <td>{{data[4][1]}}</td>
+      <td>{{data[4][2]}}</td>
+      <td>{{data[4][3]}}</td>
+      <td>{{data[4][4]}}</td>
+      <td>{{data[4][5]}}</td>
+      <td>{{data[4][6]}}</td>
+      <td>{{data[4][7]}}</td>
+    </tr>
+    <tr>
+      <td>{{data[5][0]}}</td>
+      <td>{{data[5][1]}}</td>
+      <td>{{data[5][2]}}</td>
+      <td>{{data[5][3]}}</td>
+      <td>{{data[5][4]}}</td>
+      <td>{{data[5][5]}}</td>
+      <td>{{data[5][6]}}</td>
+      <td>{{data[5][7]}}</td>
+    </tr>
+    <tr>
+      <td>{{data[6][0]}}</td>
+      <td>{{data[6][1]}}</td>
+      <td>{{data[6][2]}}</td>
+      <td>{{data[6][3]}}</td>
+      <td>{{data[6][4]}}</td>
+      <td>{{data[6][5]}}</td>
+      <td>{{data[6][6]}}</td>
+      <td>{{data[6][7]}}</td>
+    </tr>
+    <tr>
+      <td>{{data[7][0]}}</td>
+      <td>{{data[7][1]}}</td>
+      <td>{{data[7][2]}}</td>
+      <td>{{data[7][3]}}</td>
+      <td>{{data[7][4]}}</td>
+      <td>{{data[7][5]}}</td>
+      <td>{{data[7][6]}}</td>
+      <td>{{data[7][7]}}</td>
+    </tr>
+    <tr>
+      <td>{{data[8][0]}}</td>
+      <td>{{data[8][1]}}</td>
+      <td>{{data[8][2]}}</td>
+      <td>{{data[8][3]}}</td>
+      <td>{{data[8][4]}}</td>
+      <td>{{data[8][5]}}</td>
+      <td>{{data[8][6]}}</td>
+      <td>{{data[8][7]}}</td>
+    </tr>
+    <tr>
+      <td>{{data[9][0]}}</td>
+      <td>{{data[9][1]}}</td>
+      <td>{{data[9][2]}}</td>
+      <td>{{data[9][3]}}</td>
+      <td>{{data[9][4]}}</td>
+      <td>{{data[9][5]}}</td>
+      <td>{{data[9][6]}}</td>
+      <td>{{data[9][7]}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  {% else %}
+  <h1>NO DATA</h1>
+  {% endif %}
+
+
+
+
+
+
+
+
+
+</div>
+  {% endblock %}

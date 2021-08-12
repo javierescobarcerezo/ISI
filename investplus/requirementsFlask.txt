@@ -1,0 +1,6 @@
+Pillow
+Flask
+pickleshare
+requests
+bs4
+html5lib

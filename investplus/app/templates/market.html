@@ -1,0 +1,81 @@
+{% extends 'site_template.html' %}
+
+{% block body %}
+
+<div class="text-center">
+
+
+
+  {% if data %}
+
+
+
+
+  <table border="3">
+  <tbody>
+    <tr>
+      <td>Empresa</td>
+      <td>Símbolo</td>
+      <td>Open</td>
+      <td>Close</td>
+      <td>High</td>
+      <td>Low</td>
+
+      <tr>
+        <td>{{data[0][0]}}</td>
+        <td>{{data[0][1]}}</td>
+        <td>{{data[0][2]}}</td>
+        <td>{{data[0][3]}}</td>
+        <td>{{data[0][4]}}</td>
+        <td>{{data[0][5]}}</td>
+      </tr>
+      <tr>
+        <td>{{data[1][0]}}</td>
+        <td>{{data[1][1]}}</td>
+        <td>{{data[1][2]}}</td>
+        <td>{{data[1][3]}}</td>
+        <td>{{data[1][4]}}</td>
+        <td>{{data[1][5]}}</td>
+      </tr>
+      <tr>
+        <td>{{data[2][0]}}</td>
+        <td>{{data[2][1]}}</td>
+        <td>{{data[2][2]}}</td>
+        <td>{{data[2][3]}}</td>
+        <td>{{data[2][4]}}</td>
+        <td>{{data[2][5]}}</td>
+      </tr>
+      <tr>
+        <td>{{data[3][0]}}</td>
+        <td>{{data[3][1]}}</td>
+        <td>{{data[3][2]}}</td>
+        <td>{{data[3][3]}}</td>
+        <td>{{data[3][4]}}</td>
+        <td>{{data[3][5]}}</td>
+      </tr>
+      <tr>
+        <td>{{data[4][0]}}</td>
+        <td>{{data[4][1]}}</td>
+        <td>{{data[4][2]}}</td>
+        <td>{{data[4][3]}}</td>
+        <td>{{data[4][4]}}</td>
+        <td>{{data[4][5]}}</td>
+      </tr>
+
+  </tbody>
+</table>
+
+  {% else %}
+  <h1>NO DATA</h1>
+  {% endif %}
+
+
+
+
+
+
+
+
+
+</div>
+  {% endblock %}

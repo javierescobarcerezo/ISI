@@ -1,0 +1,25 @@
+# flask_dockerfile
+
+FROM python:3.7
+WORKDIR /app
+
+# Environment variables
+ENV FLASK_APP app.py
+ENV FLASK_RUN_HOST 0.0.0.0
+ENV FLASK_ENV development
+
+# Pillow external dependencies
+RUN apt-get install libjpeg-dev \
+                       zlib1g-dev \
+                       libfreetype6-dev \
+                       liblcms2-dev
+
+# Python requirements
+COPY requirementsFlask.txt .
+RUN pip install -r requirementsFlask.txt
+
+# Copy project
+COPY app .
+
+# Run project
+CMD ["python", "app.py"]

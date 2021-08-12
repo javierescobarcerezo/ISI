@@ -1,0 +1,14 @@
+{% extends 'site_template.html' %}
+
+{% block body %}
+
+<div class="text-center">
+  {% if user %}
+  <h1>Bienvenido {{user}}</h1>
+  {% else %}
+  <h1>Invirtamos bien</h1>
+  <img src="/static/Bolsa.png" width="350" height="350" alt="" />
+  {% endif %}
+</div>
+
+{% endblock %}
